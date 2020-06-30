@@ -1,8 +1,7 @@
 /**
- * Program #2
- * A program to play Scat Scout...
+ * Scat Scout (Minesweeper but with dung!)
  */
-import static java.lang.System.*; // so you can write out.println() instead of System.out.println()
+import static java.lang.System.*;
 import java.util.*;
 
 class ScatScout {
@@ -177,7 +176,7 @@ class ScatScout {
     for(int i = row-1; i<= row+1; i++){ 
       for(int j = column-1; j<=column+1; j++){ //checks everything in a 3x3 grid around the cell
         if(i >= 0 && j >= 0 && i < board.length && j < board[i].length && board[i][j] == SCAT){ 
-          numberOfScat++; //only check for scat if within the array's boundaries
+          numberOfScat++; //only +check for scat if within the array's boundaries
           if(board[row][column] == SCAT){ //if the coordinate itself is scat
             numberOfScat--; //remove it from the numberOfScat counted
           }
